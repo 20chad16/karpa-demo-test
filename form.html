@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eligibility &amp; Health Assessment | Company</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#fbf9f7",
+                      "surface-container": "#efedec",
+                      "on-background": "#1b1c1b",
+                      "inverse-on-surface": "#f2f0ee",
+                      "surface-container-low": "#f5f3f1",
+                      "on-tertiary-container": "#d2a87a",
+                      "surface-container-high": "#eae8e6",
+                      "on-tertiary-fixed": "#2b1700",
+                      "inverse-surface": "#30302f",
+                      "background": "#fbf9f7",
+                      "outline-variant": "#bfc8c9",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#98d0d7",
+                      "secondary-fixed": "#b3ecf4",
+                      "tertiary-container": "#5a3d18",
+                      "on-tertiary-fixed-variant": "#5e411c",
+                      "primary-fixed-dim": "#96d1d6",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-fixed": "#001f23",
+                      "on-secondary-container": "#346d73",
+                      "outline": "#707979",
+                      "on-error": "#ffffff",
+                      "primary": "#004B50",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#2a676c",
+                      "surface-container-highest": "#e4e2e0",
+                      "surface-dim": "#dbdad8",
+                      "tertiary-fixed-dim": "#eabf8f",
+                      "on-primary-fixed": "#002022",
+                      "on-primary-container": "#7fbabf",
+                      "on-surface": "#1b1c1b",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#0d4e55",
+                      "secondary": "#2d666d",
+                      "on-primary-fixed-variant": "#074f54",
+                      "on-surface-variant": "#404849",
+                      "tertiary": "#412704",
+                      "surface-variant": "#e4e2e0",
+                      "secondary-container": "#b3ecf4",
+                      "inverse-primary": "#96d1d6",
+                      "surface-bright": "#fbf9f7",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#ffddb9",
+                      "primary-fixed": "#b1edf2",
+                      "primary-container": "#004b50",
+                      "on-error-container": "#93000a",
+                      "brand-gold": "#b08d6a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<div class="min-h-screen flex flex-col items-center">
+<!-- Header with brand -->
+<header class="w-full flex flex-col items-center pt-8 pb-6 bg-white border-b border-surface-container-high/50">
+<div class="flex items-center gap-3 mb-8">
+<span class="text-2xl font-extrabold text-primary tracking-tight font-headline">Company</span>
+<div class="flex items-center gap-1.5 ml-4 px-3 py-1 bg-surface-container-low rounded-full">
+<span class="text-[10px] font-bold text-gray-700 uppercase tracking-wider">Excellent 4.7</span>
+<div class="flex gap-0.5">
+<span class="material-symbols-outlined text-[#4CAF50] text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#4CAF50] text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#4CAF50] text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#4CAF50] text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#4CAF50] text-[12px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<!-- Progress Stepper -->
+<div class="flex items-center gap-6 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full border-2 border-brand-gold flex items-center justify-center text-brand-gold">
+<div class="w-2 h-2 rounded-full bg-brand-gold"></div>
+</div>
+<span class="text-brand-gold">Start</span>
+</div>
+<div class="w-12 h-[2px] bg-surface-container-high"></div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-high flex items-center justify-center"></div>
+<span>Details</span>
+</div>
+<div class="w-12 h-[2px] bg-surface-container-high"></div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-high flex items-center justify-center"></div>
+<span>Eligibility</span>
+</div>
+</div>
+</header>
+<main class="w-full max-w-5xl px-6 pb-24">
+<!-- Hero Section -->
+<section class="flex flex-col items-center text-center pt-16 space-y-12">
+<div class="w-full max-w-3xl aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-primary/5">
+<img alt="Portrait of a healthy woman in a clinical living environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujWZEF1I5WK4tgPb3afayZ5IVz7lyYAqeXF0bOniC285QgaX05WKiSzAvYD27SlsBNwMSCIVdcaikiUdSEWKzzjJs151XAwvyQSCe-b-n-kvMfCI2pIriL61EGy6Jty_PcdPB8_zH7jZn9ZFHtINE5mS8TkZF2IUsFxKogFu7K3gNUpZuvslSsso0mTiyRDjAqkji7ADy6lRdlbwprCgtWN6rPsih4Sc-KvR6onJm9gSn39zyNVgHE_BY_f_kG-9yRqDdy7heScA60"/>
+</div>
+<div class="space-y-6 w-full">
+<h1 class="font-headline text-3xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight tracking-tight whitespace-nowrap">
+                        Reach your goal weight fast
+                    </h1>
+<h2 class="font-headline text-3xl md:text-5xl lg:text-6xl font-extrabold text-brand-gold leading-tight tracking-tight">
+                        without restrictive diets<br class="hidden md:block"/> and exercise.
+                    </h2>
+<p class="text-lg text-on-surface-variant font-medium pt-4 leading-relaxed whitespace-nowrap">
+                        Please answer the following questions so we can qualify you for medical weight loss.
+                    </p>
+</div>
+</section>
+<!-- Intake Form Structure -->
+<form class="mt-24 space-y-24 max-w-3xl mx-auto">
+<!-- Section 1: Personal Info -->
+<div class="space-y-12">
+<h3 class="font-headline text-2xl font-bold text-primary border-b-2 border-surface-container-high pb-6">Personal Foundations</h3>
+<div class="grid md:grid-cols-2 gap-10">
+<div class="space-y-3">
+<label class="text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">Height (cm)</label>
+<input class="w-full p-5 rounded-2xl border-surface-container-high bg-white focus:ring-2 focus:ring-primary focus:border-primary transition-all shadow-sm text-lg" placeholder="170" type="number"/>
+</div>
+<div class="space-y-3">
+<label class="text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">Current Weight (kg)</label>
+<input class="w-full p-5 rounded-2xl border-surface-container-high bg-white focus:ring-2 focus:ring-primary focus:border-primary transition-all shadow-sm text-lg" placeholder="85" type="number"/>
+</div>
+<div class="space-y-3">
+<label class="text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">Goal Weight (kg)</label>
+<input class="w-full p-5 rounded-2xl border-surface-container-high bg-white focus:ring-2 focus:ring-primary focus:border-primary transition-all shadow-sm text-lg" placeholder="70" type="number"/>
+</div>
+<div class="space-y-3">
+<label class="text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">Year of Birth</label>
+<input class="w-full p-5 rounded-2xl border-surface-container-high bg-white focus:ring-2 focus:ring-primary focus:border-primary transition-all shadow-sm text-lg" placeholder="1990" type="number"/>
+</div>
+</div>
+<div class="space-y-5">
+<p class="text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">Biological Gender</p>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex items-center justify-center p-5 rounded-2xl bg-white cursor-pointer border-2 border-surface-container-high hover:border-primary/20 has-[:checked]:border-primary has-[:checked]:bg-primary/5 transition-all shadow-sm">
+<input class="hidden" name="gender" type="radio" value="male"/>
+<span class="font-bold text-primary text-lg">Male</span>
+</label>
+<label class="flex items-center justify-center p-5 rounded-2xl bg-white cursor-pointer border-2 border-surface-container-high hover:border-primary/20 has-[:checked]:border-primary has-[:checked]:bg-primary/5 transition-all shadow-sm">
+<input class="hidden" name="gender" type="radio" value="female"/>
+<span class="font-bold text-primary text-lg">Female</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Section 2: Health Questions 1 -->
+<div class="space-y-12">
+<h3 class="font-headline text-2xl font-bold text-primary border-b-2 border-surface-container-high pb-6">Health Assessment</h3>
+<p class="text-on-surface-variant text-lg font-medium">Do any of these apply to you?</p>
+<div class="grid gap-4">
+<label class="flex items-start p-5 rounded-2xl bg-white border-2 border-surface-container-high hover:border-primary/20 transition-all cursor-pointer group shadow-sm">
+<input class="mt-1 w-5 h-5 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<div class="ml-4">
+<span class="text-sm font-bold text-primary block">End-stage kidney disease</span>
+<span class="text-xs text-on-surface-variant mt-1 block">(on or about to be on dialysis)</span>
+</div>
+</label>
+<label class="flex items-start p-5 rounded-2xl bg-white border-2 border-surface-container-high hover:border-primary/20 transition-all cursor-pointer group shadow-sm">
+<input class="mt-1 w-5 h-5 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<div class="ml-4">
+<span class="text-sm font-bold text-primary block">End-stage liver disease</span>
+<span class="text-xs text-on-surface-variant mt-1 block">(cirrhosis)</span>
+</div>
+</label>
+<label class="flex items-start p-5 rounded-2xl bg-white border-2 border-surface-container-high hover:border-primary/20 transition-all cursor-pointer group shadow-sm">
+<input class="mt-1 w-5 h-5 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<div class="ml-4">
+<span class="text-sm font-bold text-primary block">Current suicidal thoughts and/or prior suicidal attempt</span>
+</div>
+</label>
+<label class="flex items-start p-5 rounded-2xl bg-white border-2 border-surface-container-high hover:border-primary/20 transition-all cursor-pointer group shadow-sm">
+<input class="mt-1 w-5 h-5 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<div class="ml-4">
+<span class="text-sm font-bold text-primary block">Cancer</span>
+<span class="text-xs text-on-surface-variant mt-1 block">(within the last 2 years, or you are currently receiving chemotherapy or radiation therapy, or have had more than one occurrence of cancer)</span>
+</div>
+</label>
+<label class="flex items-start p-5 rounded-2xl bg-white border-2 border-surface-container-high hover:border-primary/20 transition-all cursor-pointer group shadow-sm">
+<input class="mt-1 w-5 h-5 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<div class="ml-4">
+<span class="text-sm font-bold text-primary block">Severe gastrointestinal condition</span>
+<span class="text-xs text-on-surface-variant mt-1 block">(gastroparesis, blockage, inflammatory bowel disease)</span>
+</div>
+</label>
+<label class="flex items-start p-5 rounded-2xl bg-white border-2 border-surface-container-high hover:border-primary/20 transition-all cursor-pointer group shadow-sm">
+<input class="mt-1 w-5 h-5 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<div class="ml-4">
+<span class="text-sm font-bold text-primary block">Current diagnosis of or treatment for alcohol, opioid, or substance use disorder/dependence</span>
+</div>
+</label>
+<label class="flex items-center p-5 rounded-2xl bg-primary/5 border-2 border-primary/20 hover:border-primary/40 transition-all cursor-pointer group shadow-sm">
+<input class="w-5 h-5 rounded border-primary text-primary focus:ring-primary" type="checkbox"/>
+<span class="ml-4 text-sm font-bold text-primary">None of the above</span>
+</label>
+</div>
+</div>
+<!-- Section 3: Health Questions 2 -->
+<div class="p-10 rounded-[2rem] bg-white border-2 border-surface-container-high space-y-10 shadow-xl shadow-primary/5">
+<div class="space-y-2">
+<h3 class="font-headline text-2xl font-bold text-primary">Detailed Medical History</h3>
+<p class="text-on-surface-variant text-lg font-medium">Do any of these apply to you?</p>
+</div>
+<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Gallbladder disease</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Hypertension (high blood pressure)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Seizures</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Glaucoma</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Sleep apnea</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Type 2 diabetes (not on insulin)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Type 2 diabetes (on insulin)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Type 1 diabetes</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Diabetic retinopathy (progressive damage to blood vessels in back of eye)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Use of the blood thinner warfarin (Coumadin/Jantoven)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">History of or current pancreatitis</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Personal or family history of thyroid issues (medullary thyroid cancer or Multiple Endocrine Neoplasia syndrome type 2 [MEN 2])</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Gout</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">High cholesterol or triglycerides</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Depression</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Head injury</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Tumor/infection in brain/spinal cord</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Low sodium</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Liver disease, including fatty liver</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Kidney disease</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Elevated resting heart rate (tachycardia)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Coronary artery disease or heart attack/stroke in last 2 years</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Allergic to any medication</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Congestive heart failure</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">QT prolongation or other heart rhythm disorder</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Hospitalization within the last 1 year</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Human immunodeficiency virus (HIV)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Acid reflux</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Asthma/reactive airway disease</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Urinary stress incontinence</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Polycystic ovarian syndrome (PCOS)</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Clinically proven low testosterone</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Osteoarthritis</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low border border-transparent cursor-pointer hover:border-primary/30 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-surface-container-high text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">Constipation</span>
+</label>
+<label class="flex items-start gap-3 p-4 rounded-xl bg-primary/5 border border-primary/20 cursor-pointer hover:border-primary/40 transition-all">
+<input class="mt-1 w-4 h-4 rounded border-primary text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-[11px] font-bold text-primary leading-tight">None of the above</span>
+</label>
+</div>
+</div>
+<!-- Section 4: Additional Meds & History -->
+<div class="space-y-12">
+<h3 class="font-headline text-2xl font-bold text-primary border-b-2 border-surface-container-high pb-6">Additional Medical Context</h3>
+<div class="space-y-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-8 p-6 rounded-2xl bg-white border border-surface-container-high shadow-sm">
+<p class="font-bold text-lg text-primary max-w-md">Within the last 3 months, have you taken opiate pain medications and/or opiate-based street drugs?</p>
+<div class="flex gap-4 shrink-0">
+<button class="px-8 py-4 rounded-xl border-2 border-surface-container-high font-bold text-primary hover:bg-surface transition-all" type="button">No</button>
+<button class="px-8 py-4 rounded-xl border-2 border-surface-container-high font-bold text-primary hover:bg-surface transition-all" type="button">Yes</button>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-8 p-6 rounded-2xl bg-white border border-surface-container-high shadow-sm">
+<p class="font-bold text-lg text-primary max-w-md">Have you had prior weight loss surgeries?</p>
+<div class="flex gap-4 shrink-0">
+<button class="px-8 py-4 rounded-xl border-2 border-surface-container-high font-bold text-primary hover:bg-surface transition-all" type="button">No</button>
+<button class="px-8 py-4 rounded-xl border-2 border-surface-container-high font-bold text-primary hover:bg-surface transition-all" type="button">Yes</button>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-8 p-6 rounded-2xl bg-white border border-surface-container-high shadow-sm">
+<p class="font-bold text-lg text-primary max-w-md">Do you currently take any prescription medications?</p>
+<div class="flex gap-4 shrink-0">
+<button class="px-8 py-4 rounded-xl border-2 border-surface-container-high font-bold text-primary hover:bg-surface transition-all" type="button">No</button>
+<button class="px-8 py-4 rounded-xl border-2 border-surface-container-high font-bold text-primary hover:bg-surface transition-all" type="button">Yes</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 5: Vitals -->
+<div class="space-y-12">
+<h3 class="font-headline text-2xl font-bold text-primary border-b-2 border-surface-container-high pb-6">Vital Information</h3>
+<div class="grid md:grid-cols-2 gap-10">
+<div class="space-y-3">
+<label class="text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">What is your blood pressure range?</label>
+<select class="w-full p-5 rounded-2xl border-surface-container-high bg-white focus:ring-2 focus:ring-primary focus:border-primary transition-all shadow-sm text-lg appearance-none">
+<option disabled="" selected="">Select range</option>
+<option>&lt;120/80 (Normal)</option>
+<option>120 to 129/&lt;80 (Elevated)</option>
+<option>130 to 139/80-89 (High Stage 1)</option>
+<option>≥140/90 (High Stage 2)</option>
+</select>
+</div>
+<div class="space-y-3">
+<label class="text-[11px] font-bold text-on-surface-variant uppercase tracking-widest">What is your average resting heart rate?</label>
+<select class="w-full p-5 rounded-2xl border-surface-container-high bg-white focus:ring-2 focus:ring-primary focus:border-primary transition-all shadow-sm text-lg appearance-none">
+<option disabled="" selected="">Select range</option>
+<option>&lt;60 beats per minute (Slow)</option>
+<option>60 to 100 beats per minute (Normal)</option>
+<option>101 to 110 beats per minute (Slightly Fast)</option>
+<option>&gt;110 beats per minute (Fast)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Footer / CTA -->
+<div class="pt-20 border-t-2 border-surface-container-high flex flex-col items-end">
+<button class="w-full md:w-auto px-20 py-7 bg-primary text-white rounded-[1.25rem] font-headline font-extrabold text-2xl hover:bg-primary/90 shadow-2xl shadow-primary/20 transition-all active:scale-[0.98]" type="submit">
+                        Continue to Health Details
+                    </button>
+</div>
+</form>
+</main>
+<footer class="w-full max-w-4xl px-6 py-16 border-t border-surface-container-high text-center">
+<p class="text-[11px] text-on-surface-variant font-bold uppercase tracking-[0.4em]">© 2026 COMPANY</p>
+</footer>
+</div>
+</body></html>
